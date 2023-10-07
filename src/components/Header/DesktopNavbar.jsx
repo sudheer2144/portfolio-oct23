@@ -1,16 +1,9 @@
 import React from "react";
-import image from "../../assests/images.png";
-import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
-
-import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
-
-import { CiLight } from "react-icons/ci";
-
 import { useState, useEffect } from "react";
 import ThemeIcon from "../ActionIcons/ThemeIcon";
 import HamburgerIcon from "../ActionIcons/HamburgerIcon";
-import { dark } from "@mui/material/styles/createPalette";
+
 import MobileNavbar from "./MobileNavbar";
 
 const navLinkStyling =
