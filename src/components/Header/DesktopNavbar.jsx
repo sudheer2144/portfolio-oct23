@@ -83,13 +83,19 @@ export default function Header() {
           </span>
         </div>
         <div className="sm:hidden flex items-center mr-[1rem]">
-          <button className="mr-[9px]" onClick={() => setTheme(!darkTheme)}>
+          <motion.button
+            initial={{ x: 200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="mr-[9px]"
+            onClick={() => setTheme(!darkTheme)}
+          >
             <ThemeIcon darkTheme={darkTheme} />
-          </button>
+          </motion.button>
           <HamburgerIcon
             setOpenMenu={setOpenMenu}
             isMenuOpended={openMenu}
-          />
+          ></HamburgerIcon>
         </div>
       </nav>
       {openMenu ? <MobileNavbar /> : null}
