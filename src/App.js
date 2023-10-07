@@ -1,9 +1,11 @@
 import "./App.css";
 
+import Header from "./components/Header/DesktopNavbar";
+
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline text-blue-600">Hello!</h1>
+      <Header />
     </div>
   );
 }
